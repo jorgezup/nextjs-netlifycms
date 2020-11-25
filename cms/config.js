@@ -1,7 +1,7 @@
 export default {
   cms_manual_init: true,
   backend: {
-    name: 'test-repo',
+    name: 'github',
     repo: 'jorgezup/nextjs-netlifycms',
     branch: 'main',
   },
