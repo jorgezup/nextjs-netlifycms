@@ -1,8 +1,8 @@
 export default {
   cms_manual_init: true,
   backend: {
-    name: 'github',
-    repo: 'yourname/your-github-repo-name',
+    name: 'test-repo',
+    repo: 'jorgezup/nextjs-netlifycms',
     branch: 'main',
   },
   media_folder: 'public/img',
@@ -18,14 +18,19 @@ export default {
           file: 'content/pages/home.md',
           fields: [
             {
-              label: 'Hero Title',
-              name: 'hero_title',
+              label: 'Title',
+              name: 'title',
               widget: 'string',
             },
             {
-              label: 'Hero Description',
-              name: 'hero_description',
+              label: 'Description',
+              name: 'description',
               widget: 'markdown',
+            },
+            {
+              label: 'Image',
+              name: 'image',
+              widget: 'image'
             },
           ],
         },

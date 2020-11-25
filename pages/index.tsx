@@ -7,6 +7,7 @@ interface Props {
 interface HomeAttributes {
   title: string;
   description: string;
+  image: string;
 }
 
 const HomePage: NextPage<Props> = ({content}) => {
@@ -16,6 +17,7 @@ const HomePage: NextPage<Props> = ({content}) => {
     <>
       <h1>{attributes.title}</h1>
       <p>{attributes.description}</p>
+      <img src={attributes.image} alt="image"/>
     </>
   )
 }
